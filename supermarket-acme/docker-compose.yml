@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+  postgres:
+    image: postgres:9.6
+    container_name: "microservice-customer"
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=postgres
+      - TZ=GMT
+    volumes:
+      - "./data/postgres:/var/lib/postgres/data"
+    ports:
+      - 5432:5432
+    networks:
+      - postgres
+  zipkin:
+    image: openzipkin/zipkin
+    container_name: zipkin
+    ports:
+      - 9411:9411
+    networks:
+      - spring
+
+networks:
+  postgres:
+    driver: bridge
+  spring:
+    driver: bridge
