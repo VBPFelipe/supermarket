@@ -14,6 +14,8 @@
 
 #### [Zipkin](http://localhost:9411/zipkin): ``http://localhost:9411/zipkin``
 
+#### [Eureka](http://localhost:8761): ``http://localhost:8761/``
+
 ##### Caso precise remover as imagens declaradas no docker-compose: ``docker-compose stop``
 
-[05:54:00](https://drive.google.com/file/d/1ntHKVixcr8bq80Hyys6heCGJqmSR2SEM/view)
+[Próxima Aula: 00:00:00](https://drive.google.com/file/d/1QnlMgmC1lk8rry2cIXh-nGaaGkfWFfnu/view)
