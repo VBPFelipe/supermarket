@@ -10,4 +10,12 @@ public interface CustomerService {
     CustomerResponse createCustomer(CustomerRequest customerRequest);
 
     List<CustomerResponse> listAll();
+
+    CustomerResponse getCustomerById(Long customerId);
+
+    CustomerResponse getCustomerByCpf(String customerCpf);
+
+    CustomerResponse updateCustomerById(Long customerId, CustomerRequest request);
+
+    void deleteCustomer(Long customerId);
 }

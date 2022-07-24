@@ -27,7 +27,7 @@ public class FraudEntity {
     private Long id;
 
     private String description;
-    private Long customerId;
-    private boolean isFraud;
+    private String customerCpf;
+    private Boolean isFraud;
     private LocalDateTime createdAt;
 }

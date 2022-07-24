@@ -27,4 +27,5 @@ public class CustomerEntity {
 
     private String name;
     private String email;
+    private String cpf;
 }

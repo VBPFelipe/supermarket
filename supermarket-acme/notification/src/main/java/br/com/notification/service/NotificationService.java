@@ -9,7 +9,11 @@ public interface NotificationService {
 
     NotificationResponse createNotification(NotificationRequest request);
 
+    NotificationResponse getNotification(Long notificationId);
+
     List<NotificationResponse> listAll();
 
-    void deleteNotification(Long id);
+    NotificationResponse updateNotification(Long notificationId, NotificationRequest request);
+
+    void deleteNotification(Long notificationId);
 }

@@ -7,7 +7,15 @@ import java.util.List;
 
 public interface FraudService {
 
-    boolean isFraud(Long customerId);
     FraudResponse registeredFraud(FraudRequest fraudRequest);
+
+    Boolean isFraud(String customerCpf);
+
+    FraudResponse getFraudById(Long fraudId);
+
     List<FraudResponse> listAll();
+
+    FraudResponse updateFraud(Long fraudId, FraudRequest request);
+
+    void deleteFraud(Long fraudId);
 }

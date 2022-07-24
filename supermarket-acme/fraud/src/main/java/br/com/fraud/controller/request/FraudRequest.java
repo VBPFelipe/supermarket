@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 public class FraudRequest {
 
     private String description;
-    private Long customerId;
-    private boolean isFraud;
+    private String customerCpf;
+    private Boolean isFraud;
     private LocalDateTime createdAt;
 }

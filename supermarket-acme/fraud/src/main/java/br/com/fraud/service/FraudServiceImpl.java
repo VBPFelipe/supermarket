@@ -5,14 +5,14 @@ import br.com.fraud.controller.request.FraudRequest;
 import br.com.fraud.controller.response.FraudResponse;
 import br.com.fraud.model.FraudEntity;
 import br.com.fraud.repository.FraudRepository;
-import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.HttpClientErrorException;
 
-import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
-public class FraudServiceImpl implements FraudService{
+public class FraudServiceImpl implements FraudService {
 
     private final FraudRepository fraudRepository;
 
@@ -25,25 +25,52 @@ public class FraudServiceImpl implements FraudService{
 
     @Override
     public FraudResponse registeredFraud(FraudRequest fraudRequest) {
+        if(fraudRequest == null ){
+            throw new HttpClientErrorException(HttpStatus.NOT_FOUND);
+        }
         var entity = (FraudEntity) this.convertUtils.convertRequestToEntity(fraudRequest, FraudEntity.class);
         return (FraudResponse) this.convertUtils.convertEntityToResponse(this.fraudRepository.save(entity) , FraudResponse.class);
     }
 
     @Override
-    public boolean isFraud(Long customerId) {
-        var fraud = this.fraudRepository.save(
-                FraudEntity.builder()
-                        .customerId(customerId)
-                        .isFraud(false)
-                        .description("This is not a fraud")
-                        .createdAt(LocalDateTime.now())
-                        .build());
-        return fraud.isFraud();
+    public Boolean isFraud(String customerCpf) {
+        if(customerCpf == null ){
+            throw new HttpClientErrorException(HttpStatus.NOT_FOUND);
+        }
+        var entity = (FraudEntity) this.fraudRepository.getFraudEntityByCustomerCpf(customerCpf);
+        return entity.getIsFraud();
+    }
+
+    @Override
+    public FraudResponse getFraudById(Long fraudId) {
+        if(fraudId == null ){
+            throw new HttpClientErrorException(HttpStatus.NOT_FOUND);
+        }
+        return (FraudResponse) this.convertUtils.convertEntityToResponse(this.fraudRepository.getById(fraudId), FraudResponse.class);
     }
 
     @Override
     public List<FraudResponse> listAll() {
         List<FraudEntity> entities = this.fraudRepository.findAll();
         return (List<FraudResponse>) this.convertUtils.convertToListResponse(entities, FraudResponse.class);
+    }
+
+    @Override
+    public FraudResponse updateFraud(Long fraudId, FraudRequest request) {
+        if(request == null || fraudId == null) {
+            throw new HttpClientErrorException(HttpStatus.NOT_FOUND);
+        }
+        var entity = (FraudEntity) this.convertUtils.convertRequestToEntity(request, FraudEntity.class);
+        entity.setId(fraudId);
+        return (FraudResponse) this.convertUtils.convertEntityToResponse(this.fraudRepository.save(entity) , FraudResponse.class);
+    }
+
+    @Override
+    public void deleteFraud(Long fraudId) {
+        if( fraudId == null) {
+            throw new HttpClientErrorException(HttpStatus.NOT_FOUND);
+        }
+
+        this.fraudRepository.deleteById(fraudId);
     }
 }
