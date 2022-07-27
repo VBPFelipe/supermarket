@@ -18,4 +18,4 @@
 
 ##### Caso precise remover as imagens declaradas no docker-compose: ``docker-compose stop``
 
-[Próxima Aula: 00:09:00](https://drive.google.com/file/d/1QnlMgmC1lk8rry2cIXh-nGaaGkfWFfnu/view)
+[Próxima Aula: 01:12:30](https://drive.google.com/file/d/1QnlMgmC1lk8rry2cIXh-nGaaGkfWFfnu/view)
