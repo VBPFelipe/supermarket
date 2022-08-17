@@ -11,6 +11,8 @@ public interface FraudService {
 
     Boolean isFraud(String customerCpf);
 
+    FraudResponse getFraudByCustomerCpf(String customerCpf);
+
     FraudResponse getFraudById(Long fraudId);
 
     List<FraudResponse> listAll();

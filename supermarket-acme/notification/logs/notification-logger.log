@@ -1,0 +1,164 @@
+2022-08-04 23:41:22,134 INFO org.springframework.boot.StartupInfoLogger [main] Starting NotificationApplication using Java 17.0.3.1 on vbpfelipe-Predator-G3-572 with PID 108936 (/home/vbpfelipe/Projetos/UNIESP/Modulo-IV/Projeto/supermarket/supermarket-acme/notification/target/classes started by vbpfelipe in /home/vbpfelipe/Projetos/UNIESP/Modulo-IV/Projeto/supermarket/supermarket-acme)
+2022-08-04 23:41:22,136 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.6.0, Spring v5.3.13
+2022-08-04 23:41:22,137 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2022-08-04 23:41:23,164 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-04 23:41:23,219 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interfaces.
+2022-08-04 23:41:23,555 INFO org.springframework.cloud.context.scope.GenericScope [main] BeanFactory id=84ea6fc7-83cd-37f8-930b-bd9cd1902f6b
+2022-08-04 23:41:24,674 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Flyway Community Edition 5.2.4 by Boxfuse
+2022-08-04 23:41:24,676 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-08-04 23:41:24,743 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-08-04 23:41:24,749 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Database: jdbc:postgresql://localhost:5432/notification (PostgreSQL 9.6)
+2022-08-04 23:41:24,798 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Successfully validated 5 migrations (execution time 00:00.019s)
+2022-08-04 23:41:24,808 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Current version of schema "public": 2
+2022-08-04 23:41:24,809 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Migrating schema "public" to version 3 - ADD COLUMN CPF CUSTOMER
+2022-08-04 23:41:24,824 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Migrating schema "public" to version 4 - REMOVE COLUMN ID CUSTOMER
+2022-08-04 23:41:24,833 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Migrating schema "public" to version 5 - ADD COLUMN IS FRAUD
+2022-08-04 23:41:24,839 INFO org.flywaydb.core.internal.logging.slf4j.Slf4jLog [main] Successfully applied 3 migrations to schema "public" (execution time 00:00.036s)
+2022-08-04 23:41:24,971 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-04 23:41:25,010 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-08-04 23:41:25,116 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-04 23:41:25,210 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-08-04 23:41:25,566 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-04 23:41:25,574 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-04 23:41:26,448 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8083 (http)
+2022-08-04 23:41:26,455 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8083"]
+2022-08-04 23:41:26,456 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-08-04 23:41:26,456 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-08-04 23:41:26,535 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-08-04 23:41:26,535 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 4362 ms
+2022-08-04 23:41:26,858 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-04 23:41:28,391 INFO org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration [main] Eureka HTTP Client uses Jersey
+2022-08-04 23:41:28,526 WARN org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger [main] Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-08-04 23:41:28,596 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-08-04 23:41:28,755 INFO org.springframework.cloud.netflix.eureka.InstanceInfoFactory [main] Setting initial instance status as: STARTING
+2022-08-04 23:41:28,788 INFO com.netflix.discovery.DiscoveryClient [main] Initializing Eureka in region us-east-1
+2022-08-04 23:41:28,851 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using JSON encoding codec LegacyJacksonJson
+2022-08-04 23:41:28,852 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using JSON decoding codec LegacyJacksonJson
+2022-08-04 23:41:28,951 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using XML encoding codec XStreamXml
+2022-08-04 23:41:28,951 INFO com.netflix.discovery.provider.DiscoveryJerseyProvider [main] Using XML decoding codec XStreamXml
+2022-08-04 23:41:29,221 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [main] Resolving eureka endpoints via configuration
+2022-08-04 23:41:29,237 INFO com.netflix.discovery.DiscoveryClient [main] Disable delta property : false
+2022-08-04 23:41:29,237 INFO com.netflix.discovery.DiscoveryClient [main] Single vip registry refresh property : null
+2022-08-04 23:41:29,237 INFO com.netflix.discovery.DiscoveryClient [main] Force full registry fetch : false
+2022-08-04 23:41:29,238 INFO com.netflix.discovery.DiscoveryClient [main] Application is null : false
+2022-08-04 23:41:29,238 INFO com.netflix.discovery.DiscoveryClient [main] Registered Applications size is zero : true
+2022-08-04 23:41:29,238 INFO com.netflix.discovery.DiscoveryClient [main] Application version is -1: true
+2022-08-04 23:41:29,238 INFO com.netflix.discovery.DiscoveryClient [main] Getting all instance registry info from the eureka server
+2022-08-04 23:41:29,339 INFO com.netflix.discovery.DiscoveryClient [main] The response status is 200
+2022-08-04 23:41:29,344 INFO com.netflix.discovery.DiscoveryClient [main] Starting heartbeat executor: renew interval is: 30
+2022-08-04 23:41:29,348 INFO com.netflix.discovery.InstanceInfoReplicator [main] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-08-04 23:41:29,357 INFO com.netflix.discovery.DiscoveryClient [main] Discovery Client initialized at timestamp 1659667289357 with initial instances count: 3
+2022-08-04 23:41:29,365 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [main] Registering application MICROSERVICE-NOTIFICATION with eureka with status UP
+2022-08-04 23:41:29,365 INFO com.netflix.discovery.DiscoveryClient$3 [main] Saw local status change event StatusChangeEvent [timestamp=1659667289365, current=UP, previous=STARTING]
+2022-08-04 23:41:29,366 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_MICROSERVICE-NOTIFICATION/192.168.1.12:microservice-notification:8083: registering service...
+2022-08-04 23:41:29,367 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8083"]
+2022-08-04 23:41:29,380 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8083 (http) with context path ''
+2022-08-04 23:41:29,381 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration [main] Updating port to 8083
+2022-08-04 23:41:29,390 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [main] Attempting to connect to: [localhost:5672]
+2022-08-04 23:41:29,391 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_MICROSERVICE-NOTIFICATION/192.168.1.12:microservice-notification:8083 - registration status: 204
+2022-08-04 23:41:29,393 INFO org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer [main] Broker not available; cannot force queue declarations during start: java.net.ConnectException: Connection refused
+2022-08-04 23:41:29,398 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] Attempting to connect to: [localhost:5672]
+2022-08-04 23:41:29,427 INFO org.springframework.boot.StartupInfoLogger [main] Started NotificationApplication in 7.794 seconds (JVM running for 8.712)
+2022-08-04 23:41:29,781 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [RMI TCP Connection(7)-127.0.0.1] Attempting to connect to: [localhost:5672]
+2022-08-04 23:41:29,783 WARN org.springframework.boot.actuate.health.AbstractHealthIndicator [RMI TCP Connection(7)-127.0.0.1] Rabbit health check failed
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:602)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:724)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:252)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2165)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2138)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2118)
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.getVersion(RabbitHealthIndicator.java:49)
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.doHealthCheck(RabbitHealthIndicator.java:44)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82)
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:77)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:40)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:130)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateContribution(HealthEndpointSupport.java:141)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:126)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:95)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:66)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:71)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:74)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:121)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:96)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor110.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1223)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1173)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:640)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:615)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:565)
+	... 49 common frames omitted
+2022-08-04 23:41:29,784 INFO org.apache.juli.logging.DirectJDKLog [RMI TCP Connection(6)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-04 23:41:29,784 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(6)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2022-08-04 23:41:29,787 INFO org.springframework.web.servlet.FrameworkServlet [RMI TCP Connection(6)-127.0.0.1] Completed initialization in 2 ms
+2022-08-04 23:41:34,406 WARN org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused
+2022-08-04 23:41:34,413 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] Restarting Consumer@5649a3e8: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-08-04 23:41:34,418 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] Attempting to connect to: [localhost:5672]
+2022-08-04 23:41:39,422 WARN org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused
+2022-08-04 23:41:39,423 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] Restarting Consumer@4196f710: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-08-04 23:41:39,425 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] Attempting to connect to: [localhost:5672]
+2022-08-04 23:41:44,431 WARN org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused
+2022-08-04 23:41:44,431 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] Restarting Consumer@4cd3bd6c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-08-04 23:41:44,432 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] Attempting to connect to: [localhost:5672]
+2022-08-04 23:41:49,438 WARN org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused
+2022-08-04 23:41:49,438 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] Restarting Consumer@48a3148: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-08-04 23:41:49,440 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-5] Attempting to connect to: [localhost:5672]
+2022-08-04 23:41:54,447 WARN org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-5] Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused
+2022-08-04 23:41:54,447 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-5] Restarting Consumer@2c41e71: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-08-04 23:41:54,449 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-6] Attempting to connect to: [localhost:5672]
+2022-08-04 23:41:59,455 WARN org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-6] Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused
+2022-08-04 23:41:59,456 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-6] Restarting Consumer@5f874d8a: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-08-04 23:41:59,457 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-7] Attempting to connect to: [localhost:5672]
+2022-08-04 23:42:04,463 WARN org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-7] Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused
+2022-08-04 23:42:04,463 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-7] Restarting Consumer@2d4b37b6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2022-08-04 23:42:04,464 INFO org.springframework.amqp.rabbit.connection.AbstractConnectionFactory [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-8] Attempting to connect to: [localhost:5672]
+2022-08-04 23:42:07,403 INFO org.springframework.cloud.sleuth.autoconfig.zipkin2.ZipkinAutoConfiguration$2 [Thread-2] Flushing remaining spans on shutdown
+2022-08-04 23:42:07,404 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [SpringApplicationShutdownHook] Unregistering application MICROSERVICE-NOTIFICATION with eureka with status DOWN
+2022-08-04 23:42:07,405 INFO com.netflix.discovery.DiscoveryClient$3 [SpringApplicationShutdownHook] Saw local status change event StatusChangeEvent [timestamp=1659667327405, current=DOWN, previous=UP]
+2022-08-04 23:42:07,405 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_MICROSERVICE-NOTIFICATION/192.168.1.12:microservice-notification:8083: registering service...
+2022-08-04 23:42:07,408 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer [SpringApplicationShutdownHook] Waiting for workers to finish.
+2022-08-04 23:42:07,409 INFO org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer [SpringApplicationShutdownHook] Successfully waited for workers to finish.
+2022-08-04 23:42:07,413 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_MICROSERVICE-NOTIFICATION/192.168.1.12:microservice-notification:8083 - registration status: 204
+2022-08-04 23:42:07,438 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-04 23:42:07,440 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-08-04 23:42:07,443 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-08-04 23:42:08,457 INFO com.netflix.discovery.DiscoveryClient [SpringApplicationShutdownHook] Shutting down DiscoveryClient ...

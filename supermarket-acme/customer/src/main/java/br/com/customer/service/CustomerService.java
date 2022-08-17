@@ -7,7 +7,8 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 public interface CustomerService {
-    CustomerResponse createCustomer(CustomerRequest customerRequest);
+//    CustomerResponse createCustomer(CustomerRequest customerRequest);
+    String createCustomer(CustomerRequest customerRequest);
 
     List<CustomerResponse> listAll();
 

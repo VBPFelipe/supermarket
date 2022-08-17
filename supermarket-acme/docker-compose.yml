@@ -3,7 +3,7 @@ version: "3"
 services:
   postgres:
     image: postgres:9.6
-    container_name: "microservice-customer"
+    container_name: "supermarket-acme"
     environment:
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_USER=postgres
@@ -21,9 +21,19 @@ services:
       - 9411:9411
     networks:
       - spring
-
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - 5672:5672
+      - 8080:15672
+      - 25676:25676
+    networks:
+      - spring
 networks:
   postgres:
+    driver: bridge
+  zipkin:
     driver: bridge
   spring:
     driver: bridge

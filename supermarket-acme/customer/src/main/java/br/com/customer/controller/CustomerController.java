@@ -1,5 +1,6 @@
 package br.com.customer.controller;
 
+import br.com.customer.config.Constants;
 import br.com.customer.controller.request.CustomerRequest;
 import br.com.customer.controller.response.CustomerResponse;
 import br.com.customer.model.CustomerEntity;
@@ -8,6 +9,8 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -17,11 +20,13 @@ import java.util.List;
 
 @Slf4j
 @RestController
-@RequestMapping("/api/v1/customers")
+@RequestMapping(Constants.CUSTOMER_API)
 @Tag(name = "Api to customer management", description = "Customer creation and management")
 public class CustomerController {
 
     private final CustomerService customerService;
+
+    private Logger logger = LogManager.getLogger(CustomerController.class);
 
     public CustomerController(CustomerService customerService) {
         this.customerService = customerService;
@@ -30,11 +35,15 @@ public class CustomerController {
     @Operation(summary = "create customer", description = "create customer to fraud system")
     @ApiResponse(responseCode = "201", description = "Customer success created")
     @PostMapping
-    public ResponseEntity<CustomerResponse> createCustomer(@RequestBody CustomerRequest customerRequest) {
+    public ResponseEntity<String> createCustomer(@RequestBody CustomerRequest customerRequest) {
+        logger.trace("Customer CPF: {}", customerRequest.getCpf());
+        return ResponseEntity.ok(this.customerService.createCustomer(customerRequest));
+    }
+    /*public ResponseEntity<CustomerResponse> createCustomer(@RequestBody CustomerRequest customerRequest) {
         log.info("calling controller to create customer {}", customerRequest );
         this.customerService.createCustomer(customerRequest);
         return ResponseEntity.status(HttpStatus.CREATED).build();
-    }
+    }*/
 
     @Operation(summary = "find all customers", description = "find all customers to fraud system")
     @ApiResponse(responseCode = "200", description = "find all customers")

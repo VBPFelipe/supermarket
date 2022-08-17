@@ -23,7 +23,6 @@ public class NotificationServiceImpl implements NotificationService {
         this.convertUtils = convertUtils;
     }
 
-
     @Override
     public NotificationResponse createNotification(NotificationRequest request) {
         var notificationEntity = (NotificationEntity) this.convertUtils.convertRequestToEntity(request, NotificationEntity.class);
