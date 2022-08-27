@@ -16,9 +16,12 @@
 
 #### [Eureka](http://localhost:8761): ``http://localhost:8761/``
 
-#### [API-GATEWAY](http://localhost:8087): ``http://localhost:8087/`` 
+#### [API-GATEWAY](http://localhost:8087): ``http://localhost:8087/``
+
+#### [RABBITMQ](http://localhost:8080): ``http://localhost:8080``
 
 ##### Caso precise remover as imagens declaradas no docker-compose: ``docker-compose stop``
 
-[RabbitMQ 07:22:12](https://drive.google.com/file/d/1QnlMgmC1lk8rry2cIXh-nGaaGkfWFfnu/view)
-[Próxima Aula: 01:09:00](https://drive.google.com/file/d/1YoBQwzWUeu22tsfl3L_pbU9V2pSTqeyA/view)
+[Aula Atual: 00:00:00](https://drive.google.com/file/d/1YoBQwzWUeu22tsfl3L_pbU9V2pSTqeyA/view)
+
+Próxima Aula: Arquivos de vídeo
