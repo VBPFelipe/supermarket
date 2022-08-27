@@ -20,5 +20,5 @@
 
 ##### Caso precise remover as imagens declaradas no docker-compose: ``docker-compose stop``
 
+[RabbitMQ 07:22:12](https://drive.google.com/file/d/1QnlMgmC1lk8rry2cIXh-nGaaGkfWFfnu/view)
 [Próxima Aula: 01:09:00](https://drive.google.com/file/d/1YoBQwzWUeu22tsfl3L_pbU9V2pSTqeyA/view)
-[RabbitMQ 05:15:00](https://drive.google.com/file/d/1QnlMgmC1lk8rry2cIXh-nGaaGkfWFfnu/view)
