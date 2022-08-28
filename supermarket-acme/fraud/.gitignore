@@ -5,6 +5,10 @@ logs/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+### Ignoring .log files
+logs/
+**/*.log
+
 ### STS ###
 .apt_generated
 .classpath
