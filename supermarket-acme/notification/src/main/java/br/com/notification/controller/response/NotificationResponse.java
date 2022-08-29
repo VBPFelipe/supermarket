@@ -19,4 +19,5 @@ public class NotificationResponse {
     private String message;
     private String sender;
     private String customer_email;
+    private Boolean fraud;
 }
